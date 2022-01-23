@@ -1,0 +1,13 @@
+%input1,input2%
+
+//: This is an example of how to program using this language. The code below should simply mimic an XOR gate. :
+
+<<: input1, one :
+<<: input2, one :
+
+!&: one, input1, input2, two/three :
+!&: two, input1, one, four :
+!&: three, input2, one, four :
+!&: four, two, three, output :
+
+>>: output, four :
